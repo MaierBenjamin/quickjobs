@@ -1,0 +1,42 @@
+# Node / npm
+node_modules/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Angular build
+/dist
+/tmp
+/out-tsc
+
+# Environment files
+/src/environments/*.local.ts
+
+# IDEs / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Cache
+.cache/
+.eslintcache
+.angular/
+
+# Coverage
+/coverage
+
+# Logs
+*.log
+
+# Firebase / Vercel / Netlify
+.firebase/
+.vercel/
+.netlify/
+
+# Misc
+*.tgz
