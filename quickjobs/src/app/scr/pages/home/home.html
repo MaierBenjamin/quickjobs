@@ -1,1 +1,52 @@
-<p>home works!</p>
+<div class="page">
+  <header class="topbar">
+    <div class="left">
+      <button class="icon-btn">☰</button>
+      <button class="icon-btn">✉</button>
+    </div>
+
+    <div class="brand">Quick-Jobs</div>
+
+    <button class="avatar">
+      <img src="https://i.pravatar.cc/80?img=12" alt="Profil" />
+    </button>
+
+    <div class="search-wrap">
+      <input class="search" type="text" placeholder="Suchen…" />
+    </div>
+  </header>
+
+  <main class="content">
+    <p class="headline">Schnell Jobs finden. Einfach Jobs erstellen.</p>
+
+    <div class="cta-row">
+      <button class="cta">Job finden</button>
+      <button class="cta">Job erstellen</button>
+    </div>
+
+    <h2 class="section-title">Angesagte Jobs!</h2>
+
+    <section class="carousel">
+      <button class="nav left" (click)="prev()">‹</button>
+
+      <div class="track">
+        <div
+          class="card"
+          *ngFor="let item of visibleItems"
+        >
+          <div class="card-overlay">
+            <div class="card-title">{{ item.title }}</div>
+          </div>
+        </div>
+      </div>
+
+      <button class="nav right" (click)="next()">›</button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a>Über Uns</a>
+    <a>AGB</a>
+    <a>Kontakt</a>
+  </footer>
+</div>
